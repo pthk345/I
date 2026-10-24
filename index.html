@@ -1984,9 +1984,9 @@
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify({
-                    model: "llama-3.3-70b-versatile",
+                    model: "openai/gpt-oss-120b",
                     messages: groqMsgs,
-                    max_tokens: 200,
+                    max_tokens: 1000,
                     temperature: 0.85
                   })
                 });
@@ -2051,9 +2051,9 @@
               "Content-Type": "application/json"
             },
             body: JSON.stringify({
-              model: "llama-3.3-70b-versatile",
+              model: model: "openai/gpt-oss-120b",
               messages: groqMessages,
-              max_tokens: 200,
+              max_tokens: 1000,
               temperature: 0.85
             })
           });
@@ -3387,7 +3387,7 @@ ${habitsSummary}
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
-              model: "llama-3.3-70b-versatile",
+              model: model: "openai/gpt-oss-120b",
               messages: [{ role: "user", content: prompt }],
               max_tokens: 1000,
               temperature: 0.8
